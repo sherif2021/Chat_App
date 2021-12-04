@@ -1,0 +1,76 @@
+{
+  "project_info": {
+    "project_number": "1000707305513",
+    "project_id": "chat-app-4840e",
+    "storage_bucket": "chat-app-4840e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1000707305513:android:05b5aa0af61955187bac38",
+        "android_client_info": {
+          "package_name": "app.sherif.chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1000707305513-4udmfeualo9g85fe17qqsdvnstckin4s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLBd91a1nUB8esMToYgAQwjQaTdMJ6P3s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1000707305513-4udmfeualo9g85fe17qqsdvnstckin4s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1000707305513:android:a925089c3d9395df7bac38",
+        "android_client_info": {
+          "package_name": "app.sherif.chatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1000707305513-3bdjk0tdq8s279h9s1s67esh92qurvbe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.sherif.chatapp",
+            "certificate_hash": "c8d59ac04da809f728cfbcc41188055f83d948ff"
+          }
+        },
+        {
+          "client_id": "1000707305513-4udmfeualo9g85fe17qqsdvnstckin4s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLBd91a1nUB8esMToYgAQwjQaTdMJ6P3s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1000707305513-4udmfeualo9g85fe17qqsdvnstckin4s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
