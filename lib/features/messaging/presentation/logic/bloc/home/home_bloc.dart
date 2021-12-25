@@ -52,8 +52,8 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
     if (event is UpdateLastMessageEvent) {
       updateLastMessage(event.message);
     }
-    if (event is UserInfoChangedEvent){
-       emit(UpdateUserDataState( event.user));
+    if (event is UserInfoChangedEvent) {
+      emit(UpdateUserDataState(event.user));
     }
 
     if (event is LoadUsersEvent) {
@@ -135,7 +135,8 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
 
         case 'requestVideoCalling':
           String pic = value['data']['pic'];
-          if (!pic.startsWith('http'))
+
+          if (pic.length > 0 && !pic.startsWith('http'))
             pic = await FirebaseStorage.instance
                 .ref()
                 .child(pic)
@@ -145,6 +146,7 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
               uid: value['data']['uid'],
               name: value['data']['name'],
               pic: pic));
+
           break;
         case 'closeVideoCalling':
           emit(CloseVideoCallingState(uid: value['data']));
@@ -165,7 +167,8 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
               payload: value['data']['payload']));
           break;
       }
-    } catch (e) {}
+    } catch (e) {
+    }
   }
 
   void onSessionExpired() {
@@ -201,7 +204,7 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
         (user.lastMessage == null ||
             message.time.isAfter(user.lastMessage!.time))) {
       user.lastMessage = message;
-      emit(UpdateUserDataState( user.uid));
+      emit(UpdateUserDataState(user.uid));
     }
   }
 }
