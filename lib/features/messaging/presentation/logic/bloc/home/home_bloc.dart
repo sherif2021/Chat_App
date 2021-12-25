@@ -136,7 +136,7 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
         case 'requestVideoCalling':
           String pic = value['data']['pic'];
 
-          if (pic.length > 0 && !pic.startsWith('http'))
+          if (pic.length > 0 && !pic.startsWith('http')) //
             pic = await FirebaseStorage.instance
                 .ref()
                 .child(pic)
