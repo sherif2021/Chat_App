@@ -10,8 +10,8 @@ const videoCallingScreen = '/videoCalling';
 
 
 //api
-const apiBaseURL = 'http://192.168.1.6:5555/';
-const webServerURL = 'ws://192.168.1.6:5555/';
+const apiBaseURL = 'https://sherif-chat.herokuapp.com/';
+const webServerURL = 'ws://sherif-chat.herokuapp.com/';
 const apiKey = "123";
 
 
