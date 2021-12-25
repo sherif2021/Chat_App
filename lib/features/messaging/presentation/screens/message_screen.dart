@@ -81,6 +81,7 @@ class _MessageScreenState extends State<MessageScreen> {
                       tag: widget.userModel.hashCode,
                       child: UserPicture(
                         picUrl: widget.userModel.pic,
+                        name : widget.userModel.name,
                         size: 45,
                       ),
                     ),

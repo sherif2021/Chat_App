@@ -70,6 +70,7 @@ class ProfileScreen extends StatelessWidget {
                                       builder: (context, snapshot) {
                                         return UserPicture(
                                           picUrl: profileCubit.profile.picUrl,
+                                          name: profileCubit.profile.name,
                                           size: 100,
                                         );
                                       }),

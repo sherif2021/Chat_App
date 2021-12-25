@@ -1,7 +1,9 @@
+import 'dart:math';
+
 import 'package:chat/features/messaging/presentation/logic/bloc/home/home_bloc.dart';
 import 'package:chat/features/messaging/presentation/logic/bloc/video_calling/video_calling_bloc.dart';
+import 'package:chat/features/messaging/presentation/widgets/user_picture_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_webrtc/flutter_webrtc.dart';
@@ -137,10 +139,7 @@ class VideoCallingScreen extends StatelessWidget {
                           SizedBox(
                             height: 80.h,
                           ),
-                          CircleAvatar(
-                            radius: 60,
-                            backgroundImage: NetworkImage(pic),
-                          ),
+                          UserPicture(picUrl: pic, name: name, size: 60),
                           SizedBox(
                             height: 20.h,
                           ),

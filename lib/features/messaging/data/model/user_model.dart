@@ -1,3 +1,6 @@
+import 'dart:math';
+import 'dart:ui';
+
 import 'package:chat/features/messaging/data/model/message_model.dart';
 
 class UserModel {
@@ -7,6 +10,7 @@ class UserModel {
   String? pic;
   DateTime? lastSeen;
   MessageModel? lastMessage;
+  late final Color picColor;
 
   UserModel(
       {this.index,
@@ -14,7 +18,10 @@ class UserModel {
       required this.name,
       this.pic,
       this.lastSeen,
-      this.lastMessage});
+      this.lastMessage}) {
+    picColor =
+        Color((Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0);
+  }
 
   UserModel copyWith(
       {int? index,

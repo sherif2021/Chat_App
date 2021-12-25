@@ -3,7 +3,6 @@ import 'package:chat/features/messaging/presentation/logic/bloc/home/home_bloc.d
 import 'package:chat/features/messaging/presentation/widgets/user_widget.dart';
 import 'package:chat/utility/constants.dart';
 import 'package:fcm_config/fcm_config.dart';
-import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

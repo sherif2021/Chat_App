@@ -20,6 +20,7 @@ class UserWidget extends StatelessWidget {
             tag: userModel.hashCode,
             child: UserPicture(
               picUrl: userModel.pic,
+              name : userModel.name,
               size: 50,
             ),
           ),
