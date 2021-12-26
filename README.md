@@ -4,6 +4,8 @@ Chat App With many Features ( Send, Seen, Profile, And Video Calling With WebRTC
 
 using flutter SDK and Node.js
 
+#### A note about video calling
+Right now, I don't have a stun server, so video connectivity won't work unless the two ends of the connection are on the same network (WIFI)
 
 ### Main Screen
 
