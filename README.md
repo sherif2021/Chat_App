@@ -16,7 +16,7 @@ Right now, I don't have a stun server, so video connectivity won't work unless t
 4- firebase_core -> To use Firebase\
 5- firebase_auth -> To use Firebase Phone Auth\
 6- firebase_storage -> To store users Pictures\
-7- firebase_messaging -> To Send Notifications to users\ 
+7- firebase_messaging -> To Send Notifications to users\
 8- fcm_config -> To Handle Notifications clicks\
 9- sqflite -> To store user data locally\
 10- image_picker -> To pickup images\
